@@ -312,3 +312,18 @@ document.addEventListener('DOMContentLoaded', () => {
  console.log(personalDetails);
  
 });
+const personalDetailsList = document.getElementById('confirmationSummaryPersonalDetails');
+personalDetailsList.innerHTML = `
+  <li>First Name: ${firstName}</li>
+  <li>Last Name: ${lastName}</li>
+  <li>Gender: ${gender}</li>
+  <li>Email: ${email}</li>
+  <li>Phone Number: ${phoneNumber}</li>
+`;
+
+
+nextStep();
+;
+
+showStep(currentStep);
+;
